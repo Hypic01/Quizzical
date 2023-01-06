@@ -1,6 +1,5 @@
+import React from 'react'
 import './App.css'
-import React from 'react';
-import ReactDOM from 'react-dom';
 import Intro from '../components/Intro'
 import Quiz from '../components/Quiz'
 
@@ -13,8 +12,8 @@ export default function App(){
 
     return (
         <main className='main'>
-            <img className='blob-yellow' src='./img/blob-yellow.png'/>
-            <img className='blob-blue' src='./img/blob-blue.png'/>
+            <img className='blob-yellow' src='../img/blob-yellow.png'/>
+            <img className='blob-blue' src='../img/blob-blue.png'/>
             
             {start ? <Quiz/> : <Intro startQuiz={startQuiz}/>}
         </main>
